@@ -1,2 +1,2 @@
 # Revowitch
-site web  to  statup-ecofriendly
+site web  to  startup-ecofriendly
