@@ -1,20 +1,10 @@
-# Revowitch
-site web to a markething-ecofriendly.
+REVOWITCH
+Es una plataforma que desea publisitar a su socios con el fin de estandarizar el mercado ecofriendly a una filosofia 
+a favor de la conciencia de la Madre tierra. 
 
-Este sitio web, almacena a pequeñas o/y medianas tiendas eco-friendly, estandarizados a su filosofia como startup. 
-la misma que expresa su participacion aqui en el opensource. Ofreciendo una experiencia de usuario atractiva para clientes potenciales.
-Vision en manejar a otro nivel el mercado-ecofriendly.
-
-
-SE PRETENDE USAR APIS COMO
-stripe,
-
-arriesgarse con solidity.js 
-**
+Este sitio web será realizado con react js, materialize css, xpress y stripe para los pagos de las donaciones.
 
 
 
- 
 
- 
 
