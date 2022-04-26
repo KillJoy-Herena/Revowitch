@@ -5,18 +5,16 @@
   }
   
   body {
-    font-family: "Oswald", sans-serif;
+    font-family:'Economica', sans-serif;
     /* Pattern from https://www.heropatterns.com/ */
-    background-color: #87aba4;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%230c694c' fill-opacity='0.45' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E"); 
-    color: #ffffff;
+    background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
    /* color: #fff;*/
     font-size: 16px;
   }
   /*ionos.es/digitalguide/servidores/kanow-how/los-protocolos-de-red-en-la-transmision-de-datos/*/
   
   a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
   }
     
@@ -25,25 +23,26 @@
     margin: auto;
   }
   
-  /* #### **********NAVEGADOR************** #### */
+  /* ________________ NAVEGADOR ___________________________ */
   .nav-main {
-    font-size: 17px;
+    font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
-    align-items:left;
     height: 80px;
-    padding: 5px 0;
+    padding: 15px 0;
+
   }
   
   .nav-brand {
     align-items: center;
     padding: 0 ;
-    width: 110px;
+    width: 100px;
   }
   
   /* Navbar Left */
   .nav-main ul {
     display: flex;
+    z-index: 1;
   }
   
   .nav-main ul li {
@@ -51,7 +50,7 @@
   }
   
   .nav-main ul li a:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #D2CF88;
   }
   
   .nav-main ul.nav-menu {
@@ -64,10 +63,11 @@
   .menu_link {
     display: block;
     text-decoration: none;
+    text-shadow: #3D3A31;
   }
   .submenu{ 
    height: 0;    
-   background: rgba(87, 61, 74,0.9) ;
+   background: rgba(201, 35, 35,0.60) ;
    overflow: hidden;
    transition: all 0.3s;
    
@@ -78,11 +78,12 @@
   }
   .container-submenu:hover .submenu{
     height: auto;
+    
   }
   
   
   hr {
-    margin: 10px 0;
+    margin: 8px 0;
   }
   .menu, .submenu {
     list-style: none;
@@ -118,12 +119,12 @@
   
   }
   
-  /* ####******************** SHOWCASE *************** #### */
+  /* ____________________________ SHOWCASE __________________________ */
   
   .showcase {
     width: 100%;
     z-index: 50;
-    height: 320px;
+    height: 55%;
     background: url("./img/darkgreen.jpg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
@@ -139,14 +140,14 @@
     width: 155px;
     height: 55px;
     font-size:1.5em;
-    background: rgba(102,0,51, 0.60);
+    background: rgba(201,35,35, 0.60);
     border-radius: 8px;
     text-align: center;
    
   }
   
   .showcase h2 {
-  margin-top: 1rem;
+  margin-top: 2rem;
   }
   .showcase p {
     margin-bottom: 10px;
@@ -157,44 +158,48 @@
     margin-top: 15px;
     margin-bottom: 10px;
   }
-  /*    ######## ********************  CARROUSEL   ***************** #### */
-  .carrousel{
-    height: 200px;
-   
-  }
-  .carrousel .element{
-    width: 300%;
-    display: flex;
-    flex-flow: row nowrap;
+  /*_________________________  CARROUSEL _____________________________ */
+ .carousel__elemento{
+  height: 45%;
+ }
+ .carousel img{
   
-    justify-content: space-between;
-    
+   border-radius: 8px;
+   box-shadow: 5px 5px rgba(102,0,51, 0.22);
+
   }
-  .carrousel .carrousel__item{
-    width: calc(100% / 3 );
-    height: 100%;
-    border-radius: 8px;
-  } 
+  .carousel__lista{
+    overflow: hidden;
+  }
+
+  /*__________________________   PRINCIPAL  ______________________________*/
+  .justification{
+    background-color: rgba(218,165,32,.6);
+    margin-top: 1rem;
+    align-items: flex-end;
+
+  }
+  .Categoria-one{
+    margin-left: 25%;
+    text-align: left;
+    width: 70%;
+    padding: 1rem 1rem 1rem;
+    margin-bottom: 2rem;
+  }
+  .Categoria-one p {
+    margin: 10px 0 20px 0;}
   
-  /*.carrousel .puntos {
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-   align-items: center;
-  }
-  .carrousel .punto{
-    width: 1rem;
-    height: .5rem;
-    margin: 1rem;
-  }
-  /* #### ********************   TARJETAS   *****************  #### */
+    .Categoria-one a {
+      color: #A52A2A ;
+      }
+  /* ________________________ TARJETAS  ______________________ */
   .news-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin: 70px 0;
+    color: #fff;
+    text-shadow: 1px 1px rgb(251,178, 125);
     
   }
   
@@ -207,37 +212,43 @@
   .news-cards h3 {
     font-size: 20px;
     margin: 10px 0;
-    color:#ffffff;
+    color: #D2CF88;
+    text-shadow: 1px 1px #3D3A31;
   }
   
   .news-cards a {
     padding: 10px 0;
-    color: #f2f2f2;
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
+    color:#58826A;
+    text-shadow: 1px 1px #3D3A31;
   }
   
-  /* #### *************** CARDS BANNER ONE ************* #### */
+  /* ________________CARDS BANNER ONE ________________*/
   .sobreRWitch {
 
     width: 100%;
-    height: 340px;
-    background: url("img/fly.jpg");
-    margin-bottom: 40px;
+    height: auto;
+    background: rgba(251,178, 125, 0.60);
+    border-radius: 8px;
   }
   
   .sobreRWitch .content {
     width: 70%;
-    padding: 30px 0 0 30px;
-    color: #fff;
+    padding: 10px 0 10px 25px;
+    color:  #fff;
+    text-shadow: 1px 1px #3D3A31;
+    text-align: center;
   }
   
   .sobreRWitch p {
-    margin: 10px 0 20px 0;
+    text-align: justify;
+    font-size: 19px;
+  
     
   }
-  /* ####************** Follow   ***************#### */
+  /* ___________________ Follow ___________________ */
   .social {
     margin: 50px;
   }
@@ -266,11 +277,15 @@
     color: #616161;
     font-size: 12px;
     padding: 35px 0;
+    text-decoration: none;
+  }
+  .title{
+    text-decoration: none;
   }
   
   .footer-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     align-items: flex-start;
     justify-content: center;
@@ -283,6 +298,10 @@
   .footer-links li {
     line-height: 2.8;
   }
+
+  .footer-container p{
+    margin: 0 auto;
+  }
   
   .footer {
     background: #2f3640;
@@ -294,7 +313,7 @@
     padding-bottom: 20px;
   }
   
-  /* #### **********ESTILOS RESPONSIVE ***********####  */
+  /* _____________________ESTILOS RESPONSIVE ________________________  */
   @media (max-width: 700px) {
     .menu-btn {
       display: block;
@@ -306,9 +325,10 @@
   
     .nav-main ul.menu {
       display: block;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
+      z-index: 1;
       background: #2f3640;
       width: 50%;
       height: 100%;
@@ -342,7 +362,7 @@
       position: absolute;
       width: 130px;
       opacity: 0;
-      left: 146px;
+      left: 130px;
       overflow: visible;
       z-index: 1000;
       top: 0;
@@ -354,7 +374,7 @@
       padding: 0;
       opacity: 2;
       visibility: visible;
-      background: rgba(87, 61, 74, 0.98) ;
+      background: rgba(253, 35, 35, 0.90);
       z-index: 1000;
     }
     .container-submenu:hover li.submenu_item {
@@ -394,4 +414,5 @@
       text-align: center;
     }
   }
+  
   
