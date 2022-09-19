@@ -1,0 +1,65 @@
+h1{
+  color: #D2CF88!important;
+}
+.App {
+  text-align: center;
+  background: url("../img/night-potion.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  cursor: none;
+}
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 10px auto 0;
+  font-size: 30px;
+  width: 230px;
+  height: 70px;
+  border-radius: 8px;
+  text-align: center;
+}
+.App-logo {
+  margin-top: 3rem;
+  height: 30vmin;
+  pointer-events: none;
+}
+
+
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+
+
+.App-header {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #D2CF88;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.spotlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(
+      circle,
+      transparent 160px,
+      rgba(0, 0, 0, 0.85) 200px
+  );
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
